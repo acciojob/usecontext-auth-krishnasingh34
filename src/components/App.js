@@ -10,15 +10,15 @@ const App = () => {
       <h1>Click on the checkbox to get authenticated</h1>
       {
         auth==true ? (
-          <p>You are now authenticated, you can proceed</p>
+          <p className="authText">You are now authenticated, you can proceed</p>
         ) : (
-          <p>You are not authenticated</p>
+          <p>you are not authenticated</p>
         )
       }
-      <input type="checkbox" id="auth" onClick={()=> {
+      <input type="checkbox" name="checkbox" onClick={()=> {
         setAuth(true)
       }}/>
-      <label> I'm not a robot </label>
+      <label htmlFor="checkbox"> I'm not a robot </label>
     </div>
   )
 }
