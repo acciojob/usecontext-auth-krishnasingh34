@@ -1,6 +1,5 @@
-import React, {createContext, useState} from "react";
-
-export const AuthContext = createContext()
+import React, {useState} from "react";
+import AuthContext from "./AuthContext";
 
 const AuthContextProvider = (props)=> {
     const [auth, setAuth] = useState(false)
