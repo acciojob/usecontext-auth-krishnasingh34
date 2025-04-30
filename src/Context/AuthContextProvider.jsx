@@ -5,7 +5,7 @@ const AuthContextProvider = (props)=> {
     const [auth, setAuth] = useState(false)
     return(
         <div>
-            <AuthContext.Provider value={{auth, setAuth}}>
+            <AuthContext.Provider value={{auth:auth, setAuth:setAuth}}>
                 {props.children}
             </AuthContext.Provider>
         </div>
