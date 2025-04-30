@@ -4,12 +4,12 @@ import './../styles/App.css';
 import AuthContext from "../Context/AuthContext";
 
 const App = () => {
-  let {auth, setAuth} = useContext(AuthContext)
+  const {auth, setAuth} = useContext(AuthContext)
   return (
     <div>
       <h1>Click on the checkbox to get authenticated</h1>
       {
-        auth ? (
+        auth==true ? (
           <p className="authText">You are now authenticated, you can proceed</p>
         ) : (
           <p>you are not authenticated</p>
